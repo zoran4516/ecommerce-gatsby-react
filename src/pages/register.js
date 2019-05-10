@@ -15,7 +15,26 @@ const Register = ({location}) => {
   const [apiError, setApiError] = useState([])
   const {updateToken} = useContext(AuthContext)
 
-
+  const formRegister = () => {
+    setLoading(true)
+    register({
+      name: values.name,
+      email: values.email,
+      password: values.password,
+    })
+      .then(data => {
+        const {id, token} = data
+        localStorage.setItem('customerToken', token)
+        localStorage.setItem('mcustomer', id)
+        updateToken()
+        navigate('/myaccount/')
+      })
+      .catch(e => {
+        console.log(e)
+        setLoading(false)
+        setApiError(e.errors || e)
+      })
+  }
 
   const {values, handleChange, handleSubmit, errors} = useForm(
     formRegister,
