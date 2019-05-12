@@ -1,11 +1,3 @@
-/* eslint-disable */
-import React from 'react'
-import {graphql} from 'gatsby'
-import SEO from '../components/SEO'
-import get from 'lodash/get'
-import ProductSummary from '../components/ProductSummary'
-import ProductAttributes from '../components/ProductAttributes'
-import Layout from '../components/Layout'
 
 class ProductPageTemplate extends React.PureComponent {
   render() {
