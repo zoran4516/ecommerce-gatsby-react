@@ -1,10 +1,4 @@
-/* eslint-disable camelcase */
-import React, {useState, useContext, useEffect} from 'react'
-import SEO from '../components/SEO'
-import CartItemList from '../components/CartItemList'
-import CartSummary from '../components/CartSummary'
-import CartContext from '../components/Context/CartContext'
-import Layout from '../components/Layout'
+
 
 const Moltin = require('../../lib/moltin')
 
