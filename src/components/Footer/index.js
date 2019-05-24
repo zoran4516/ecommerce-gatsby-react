@@ -2,11 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import {Segment, Container, Grid, List, Header} from 'semantic-ui-react'
 
-const twitterLink = (
-  <a href="https://twitter.com/parmsang" alt="twitter link">
-    Twitter
-  </a>
-)
+
 const facebookLink = (
   <a href="https://facebook.com/" alt="facebook link">
     Facebook
