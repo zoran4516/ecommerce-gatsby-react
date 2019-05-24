@@ -3,20 +3,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import {Header, Loader, Message, Label, Segment} from 'semantic-ui-react'
 
-export default ({orders, loading}) => {
-  if (loading) return <Loader active inline="centered" />
 
-  if (orders.length === 0) {
-    return (
-      <Message warning>
-        <Message.Header>No recent orders</Message.Header>
-        <p>
-          When you place an order, they will appear here.
-          <Link to="/">Go shopping.</Link>
-        </p>
-      </Message>
-    )
-  }
 
   return (
     <div>
