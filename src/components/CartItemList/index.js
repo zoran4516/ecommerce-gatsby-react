@@ -1,18 +1,3 @@
-/* eslint-disable camelcase */
-import React from 'react'
-import {Link} from 'gatsby'
-import {Item, Button, Loader, Message, Responsive} from 'semantic-ui-react'
-
-export default ({items, removeFromCart, loading, completed}) => {
-  if (loading) return <Loader active inline="centered" />
-
-  if (completed)
-    return (
-      <Message success>
-        <Message.Header>Your placed!</Message.Header>
-        <p>Congratulations. Your order and payment has been accepted.</p>
-      </Message>
-    )
 
   if (items.length === 0)
     return (
