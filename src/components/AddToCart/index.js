@@ -2,20 +2,7 @@ import React, {useState, useContext} from 'react'
 import {Input, Icon, Transition} from 'semantic-ui-react'
 import CartContext from '../Context/CartContext'
 
-const Moltin = require('../../../lib/moltin')
 
-const AddToCart = ({productId}) => {
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState('')
-  const [quantity, setQuantity] = useState(1)
-  const [visible, setVisible] = useState(false)
-  const {addToCart} = useContext(CartContext)
-
-  const toggleMessage = () => {
-    setTimeout(() => {
-      setVisible(false)
-    }, 1000)
-  }
 
   const validate = quantity => {
     let error
