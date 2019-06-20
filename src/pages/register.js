@@ -2,18 +2,7 @@
 /* eslint-disable no-use-before-define */
 
 
-import React, {useState, useContext} from 'react'
-import {navigate} from 'gatsby'
-import {Header, Form, Input, Button, Segment, Message} from 'semantic-ui-react'
-import SEO from '../components/SEO'
-import AuthContext from '../components/Context/AuthContext'
-import {register} from '../../lib/moltin'
-import Layout from '../components/Layout'
-import useForm from '../components/Hooks/useForm'
-const Register = ({location}) => {
-  const [loading, setLoading] = useState(false)
-  const [apiError, setApiError] = useState([])
-  const {updateToken} = useContext(AuthContext)
+
 
   const formRegister = () => {
     setLoading(true)
